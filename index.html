@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4ca7f534a9.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Be+Vietnam+Pro:wght@100..900&display=swap"
+    rel="stylesheet">
+  <title>Nathri Al Awalin Restaurant</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- ──────── NAVBAR ──────── -->
+  <nav class="main-area">
+    <div class="main">
+      <div class="logo">
+        <img src="./image/logo.png" alt="Logo">
+        <span>Nathri Al Awalin</span>
+      </div>
+      <ul>
+        <li><a href="#menu"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+        <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+        <li>
+          <a href="#" class="cart-btn" >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ──────── HERO ──────── -->
+  <section class="heros-area">
+    <div class="heros-text">
+      <div class="heros-badge">🍽 Traditional Saudi Cuisine</div>
+      <h1>Nathri Al Awalin <span>Restaurant</span></h1>
+      <h1 class="arabic">مطعم نثري الأولين <span>للأكلات الشعبية</span></h1>
+      <p class="heros-sub">Authentic flavors passed down through generations — crafted with love, served with pride.</p>
+      <div class="heros-cta">
+        <a href="#menu" class="btn-primary"><i class="fa-solid fa-utensils"></i> View Menu</a>
+        <a href="#about" class="btn-outline"><i class="fa-solid fa-circle-play"></i> Our Story</a>
+      </div>
+      <div class="heros-icon">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-snapchat"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="scroll-indicator"><i class="fa-solid fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ──────── STATS ──────── -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="num">15+</div>
+      <div class="label">Years of Excellence</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">50+</div>
+      <div class="label">Menu Items</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">2K+</div>
+      <div class="label">Happy Customers</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">4.9★</div>
+      <div class="label">Average Rating</div>
+    </div>
+  </div>
+
+  <!-- ──────── CATEGORY TABS ──────── -->
+  <section class="selection" id="menu">
+    <div class="side-gap">
+      <div class="all-item-list" id="categoryTabs">
+        <div class="item-list active" onclick="scrollToSection('chicken',this)">
+          <img src="./image/item-image/chicken.avif" alt="">
+          <h2>Chicken</h2>
+        </div>
+     <div class="item-list" onclick="scrollToSection('rice',this)">
+      <img src="./image/item-image/rice.jpg" alt="">
+      <h2>Rice</h2>
+    </div>
+        <div class="item-list" onclick="scrollToSection('meat',this)">
+          <img src="./image/item-image/meet.avif" alt="">
+          <h2>Meat</h2>
+        </div>
+        <div class="item-list" onclick="scrollToSection('vegetables',this)">
+          <img src="./image/item-image/Vegetables.jpg" alt="">
+          <h2>Vegetables</h2>
+        </div>
+        <div class="item-list" onclick="scrollToSection('drinks',this)">
+          <img src="./image/item-image/drinks.jpg" alt="">
+          <h2>Drinks</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────── MENU SECTIONS ──────── -->
+  <div class="manu-section">
+    <div class="side-gap">
+      <div class="manu-list">
+
+        <!-- CHICKEN -->
+        <div class="category-section" id="chicken">
+          <div class="section-heading">
+            <h2>Chicken</h2>
+            <span class="tag">5 items</span>
+          </div>
+          <hr class="cat-divider">
+          <div class="chicken-item-list" style="margin-top:1.5rem">
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/grild.jpg"
+                  alt="Grilled Full Chicken"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-pop">Popular</span></div>
+                <h4>Grilled Full Chicken</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>30 SAR</span></span><button>Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/Gemini_Generated_Image_xmy4fhxmy4fhxmy4.png"
+                  alt="Grilled Half Chicken"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Grilled Half Chicken</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>18 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/7da1ef25-1bcc-4487-a651-4c0e64b0ba0e.jpg"
+                  alt="Chicken Quarters"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Grilled Quarters with rice</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>15 SAR</span></span><button
+                  >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/mandi full.png"
+                  alt="Mandi Chicken"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-new">New</span></div>
+                <h4> full Mandi Chicken</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>35 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/mandi.webp" alt="Mandi Chicken"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-new">New</span></div>
+                <h4>helf Mandi Chicken</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>35 SAR</span></span>
+                  <button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/full al faham.png"
+                  alt="Al Faham"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>full Al Faham</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>22 SAR</span></span><button
+                >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/half al faham.png" alt="Al Faham"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4> helf Al Faham</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>22 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="./image/chicken/half al faham.png" alt="Al Faham"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4> full Chicken Nathri Alawalin Madghot</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>22 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RICE -->
+        <div class="category-section" id="rice">
+          <div class="section-heading">
+            <h2>Rice Dishes</h2>
+            <span class="tag">4 items</span>
+          </div>
+          <hr class="cat-divider">
+          <div class="chicken-item-list" style="margin-top:1.5rem">
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400"
+                  alt="Kabsa"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-pop">Popular</span></div>
+                <h4>Kabsa Rice</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>28 SAR</span></span><button>Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=400"
+                  alt="Mandi Rice"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Mandi Rice</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>25 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400"
+                  alt="Biryani"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-new">New</span></div>
+                <h4>Chicken Biryani</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>30 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?w=400"
+                  alt="Saffron Rice"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Saffron Rice</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>18 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MEAT -->
+        <div class="category-section" id="meat">
+          <div class="section-heading">
+            <h2>Meat Dishes</h2>
+            <span class="tag">5 items</span>
+          </div>
+          <hr class="cat-divider">
+          <div class="chicken-item-list" style="margin-top:1.5rem">
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400"
+                  alt="Lamb Mandi"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-pop">Popular</span></div>
+                <h4>Lamb Mandi</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>55 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400"
+                  alt="Lamb Kabsa"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Lamb Kabsa</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>50 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400"
+                  alt="Grilled Kofta"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Grilled Kofta</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>32 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400"
+                  alt="Beef Shawarma"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-new">New</span></div>
+                <h4>Beef Shawarma</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>20 SAR</span></span><button
+                  >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400"
+                  alt="Mixed Grill"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Mixed Grill Platter</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>65 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEGETABLES -->
+        <div class="category-section" id="vegetables">
+          <div class="section-heading">
+            <h2>Vegetables & Sides</h2>
+            <span class="tag">4 items</span>
+          </div>
+          <hr class="cat-divider">
+          <div class="chicken-item-list" style="margin-top:1.5rem">
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400"
+                  alt="Fattoush Salad"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-pop">Popular</span></div>
+                <h4>Fattoush Salad</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>14 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400"
+                  alt="Grilled Vegetables"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Grilled Vegetables</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>16 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400"
+                  alt="Hummus"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Hummus & Pita</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>12 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400"
+                  alt="Tabouleh"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-new">New</span></div>
+                <h4>Tabouleh</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>13 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="category-section" id="drinks">
+          <div class="section-heading">
+            <h2>Drinks</h2>
+            <span class="tag">5 items</span>
+          </div>
+          <hr class="cat-divider">
+          <div class="chicken-item-list" style="margin-top:1.5rem">
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400"
+                  alt="Lemon Mint"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-pop">Popular</span></div>
+                <h4>Lemon Mint</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>8 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1562155618-e1a8da028fdd?w=400"
+                  alt="Jallab"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Jallab Juice</h4>
+                <hr>
+                <div class="price-row">
+                  <span class="price">Price: <span>10 SAR</span></span>
+                  <button>Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400"
+                  alt="Arabic Coffee"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Arabic Coffee</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>7 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=400"
+                  alt="Tamarind Drink"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"><span class="badge-new">New</span></div>
+                <h4>Tamarind Drink</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>9 SAR</span></span><button
+                   >Add</button>
+                </div>
+              </div>
+            </div>
+            <div class="chicken-item">
+              <div class="chicken-image"><img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400"
+                  alt="Fresh Juice"></div>
+              <div class="chicken-text">
+                <div class="badge-slot"></div>
+                <h4>Fresh Orange Juice</h4>
+                <hr>
+                <div class="price-row"><span class="price">Price: <span>11 SAR</span></span><button
+                    >Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /manu-list -->
+    </div>
+  </div>
+
+  <!-- ──────── ABOUT ──────── -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Restaurant Interior">
+      </div>
+      <div class="about-text">
+        <h2>Our Story &amp; <span>Heritage</span></h2>
+        <p>Founded over 15 years ago in the heart of Saudi Arabia, Nathri Al Awalin was born from a passion for
+          preserving authentic folk cuisines. Every dish tells a story of generations of culinary tradition.</p>
+        <p>We source the finest local ingredients, use time-honored spice blends, and prepare everything fresh daily —
+          ensuring every plate carries the warmth of home.</p>
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="feature-text">
+              <h4>Charcoal Grilled</h4>
+              <p>Traditional cooking methods</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div class="feature-text">
+              <h4>Fresh Daily</h4>
+              <p>No frozen, no shortcuts</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="feature-text">
+              <h4>Award Winning</h4>
+              <p>Best traditional cuisine 2023</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="feature-text">
+              <h4>Fast Delivery</h4>
+              <p>30–45 min to your door</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────── TESTIMONIALS ──────── -->
+  <section class="testimonials-section">
+    <div class="testimonials-header">
+      <h2>What Our <span>Guests</span> Say</h2>
+      <p>Thousands of satisfied customers across the Kingdom</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"The Lamb Mandi is absolutely incredible — smoky, tender, perfectly spiced. It reminds me of my grandmother's
+          cooking."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AM</div>
+          <div class="author-info">
+            <h4>Ahmed Al-Mansour</h4><span>Riyadh</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Best Kabsa I've had outside of a family gathering. The rice was perfectly cooked and the chicken was
+          fall-off-the-bone tender."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SF</div>
+          <div class="author-info">
+            <h4>Sara Al-Fahad</h4><span>Jeddah</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★☆</div>
+        <p>"The Al Faham chicken and the lemon mint drink is my go-to order every week. Consistent quality and fast
+          delivery every time."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">KH</div>
+          <div class="author-info">
+            <h4>Khalid Al-Hamdan</h4><span>Dammam</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────── CTA ──────── -->
+  <section class="cta-section">
+    <h2>Ready to Order?</h2>
+    <p>Fresh food delivered to your doorstep in 30–45 minutes</p>
+    <div class="cta-btns">
+      <a href="#menu" class="cta-btn-white"><i class="fa-solid fa-utensils"></i> Order Now</a>
+      <a href="tel:+966500000000" class="cta-btn-dark"><i class="fa-solid fa-phone"></i> Call Us</a>
+    </div>
+    <div class="cta-info">
+      <div class="cta-info-item"><i class="fa-solid fa-location-dot"></i> Al Olaya, Riyadh</div>
+      <div class="cta-info-item"><i class="fa-solid fa-clock"></i> Open daily 11AM – 12AM</div>
+      <div class="cta-info-item"><i class="fa-solid fa-phone"></i> +966 50 000 0000</div>
+    </div>
+  </section>
+
+  <!-- ──────── FOOTER ──────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><img src="https://via.placeholder.com/36x36/ff6d00/ffffff?text=N" alt=""><span
+            style="color:#fff">Nathri Al Awalin</span></div>
+        <p style="margin-top:1rem">Authentic Saudi folk cuisine crafted with tradition and passion since 2009. Serving
+          the Kingdom one plate at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#rice">Rice Dishes</a></li>
+          <li><a href="#meat">Meat</a></li>
+          <li><a href="#vegetables">Vegetables</a></li>
+          <li><a href="#drinks">Drinks</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Al Olaya, Riyadh</a></li>
+          <li><a href="tel:+966500000000">+966 50 000 0000</a></li>
+          <li><a href="#"><span class="__cf_email__"
+                data-cfemail="d3babdb5bc93bdb2a7bba1bafda0b2">[email&#160;protected]</span></a></li>
+          <li><a href="#">Open 11AM – 12AM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Nathri Al Awalin. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ──────── CART SIDEBAR ──────── -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping" style="color:var(--primary);margin-right:0.5rem"></i> Your Order</h3>
+      <button class="cart-close" ><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty"><i class="fa-solid fa-bowl-food"></i>
+        <p>Your bag is empty</p>
+        <p style="font-size:0.8rem;margin-top:0.3rem;color:#ccc">Add items from the menu</p>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Subtotal</span>
+        <span class="cart-total-val"><span id="cartTotal">0</span> SAR</span>
+      </div>
+      <div class="cart-total-row" style="margin-bottom:0">
+        <span class="cart-total-label" style="font-size:0.75rem">Delivery fee</span>
+        <span style="font-size:0.8rem;color:var(--teiray);font-weight:700">FREE</span>
+      </div>
+      <button class="checkout-btn" onclick="checkout()"><i class="fa-solid fa-bag-shopping"></i> Place Order</button>
+    </div>
+  </div>
+
+  <!-- ──────── TOAST ──────── -->
+  <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i><span id="toastMsg"></span></div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="./script.js"></script>
+ <!-- <script>
+    let cart = [];
+
+    function addToCart(name, price, img) {
+      const existing = cart.find(i => i.name === name);
+      if (existing) {
+        existing.qty++;
+      } else {
+        cart.push({ name, price, img, qty: 1 });
+      }
+      updateCartUI();
+      showToast(name + ' added to cart');
+    }
+
+    function updateCartUI() {
+      const count = cart.reduce((s, i) => s + i.qty, 0);
+      const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+      const el = document.getElementById('cartCount');
+      el.textContent = count;
+      el.style.display = count > 0 ? 'flex' : 'none';
+      document.getElementById('cartTotal').textContent = total;
+      const container = document.getElementById('cartItems');
+      if (cart.length === 0) {
+        container.innerHTML = '<div class="cart-empty"><i class="fa-solid fa-bowl-food"></i><p>Your bag is empty</p><p style="font-size:0.8rem;margin-top:0.3rem;color:#ccc">Add items from the menu</p></div>';
+        return;
+      }
+      container.innerHTML = cart.map((item, idx) => `
+      <div class="cart-item">
+        <img class="cart-item-img" src="${item.img}" alt="${item.name}">
+        <div class="cart-item-info">
+          <h4>${item.name}</h4>
+          <div class="ci-price">${item.price * item.qty} SAR</div>
+        </div>
+        <div class="cart-qty">
+          <button class="qty-btn" onclick="changeQty(${idx},-1)">−</button>
+          <span class="qty-num">${item.qty}</span>
+          <button class="qty-btn" onclick="changeQty(${idx},1)">+</button>
+        </div>
+        <button class="cart-remove" onclick="removeItem(${idx})"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+    `).join('');
+    }
+
+    function changeQty(idx, delta) {
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) cart.splice(idx, 1);
+      updateCartUI();
+    }
+
+    function removeItem(idx) {
+      cart.splice(idx, 1);
+      updateCartUI();
+    }
+
+    function toggleCart(e) {
+      e.preventDefault();
+      document.getElementById('cartSidebar').classList.toggle('open');
+      document.getElementById('cartOverlay').classList.toggle('open');
+    }
+
+    function checkout() {
+      if (cart.length === 0) { showToast('Add items to your cart first!'); return; }
+      cart = [];
+      updateCartUI();
+      toggleCart({ preventDefault: () => { } });
+      showToast('Order placed! We\'ll call to confirm 🎉');
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3000);
+    }
+
+    // function scrollToSection(id, el) {
+    //   document.querySelectorAll('.item-list').forEach(t => t.classList.remove('active'));
+    //   el.classList.add('active');
+
+</script> -->
+  </body>
+  </html>
