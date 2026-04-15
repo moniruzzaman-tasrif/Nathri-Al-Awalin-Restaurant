@@ -216,6 +216,33 @@ function singleItem(elem) {
   }, 2000)
   
 };
+
+function productcount() {
+  /*chicken items count */
+  const chicken = document.querySelector('#chicken-items-total');
+  const chickenTotal = document.querySelector('#chicken-Total');
+  chickenTotal.textContent = `${chicken.childElementCount} items`;
+
+  
+  const rice = document.querySelector('#rice-items-total');
+  const riceTotal = document.querySelector('#rice-Total');
+  riceTotal.textContent = `${rice.childElementCount} items`;
+
+  const meat = document.querySelector('#meat-items-total');
+  const meatTotal = document.querySelector('#meat-Total');
+  meatTotal.textContent = `${meat.childElementCount} items`;
+
+  const vegetables = document.querySelector('#vegetables-items-total');
+  const vegetablesTotal = document.querySelector('#vegetables-Total');
+  vegetablesTotal.textContent = `${vegetables.childElementCount} items`;
+
+  const drinks = document.querySelector('#drinks-items-total');
+  const drinksTotal = document.querySelector('#drinks-Total');
+  drinksTotal.textContent = `${drinks.childElementCount} items`;
+
+
+}
+productcount();
 function display() {
   careShow(); 
   addToCard();
