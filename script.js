@@ -213,7 +213,8 @@ function singleItem(elem) {
         showPop.classList.add('show');
   setTimeout(() => {
   showPop.classList.remove('show');
-},2000)
+  }, 2000)
+  
 };
 function display() {
   careShow(); 
