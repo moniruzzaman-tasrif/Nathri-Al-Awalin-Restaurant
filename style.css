@@ -1033,4 +1033,20 @@ footer {
     width: 100%;
     right: -100%;
   }
+.item-list{
+padding: 0.2rem;
+}
+.item-list img{
+width: 30px;
+height: 30px;
+}
+.item-list h2{
+font-size: 0.65rem;
+}
+.all-item-list{
+  gap: 0.5em ;
+}
+  .selection {
+    padding: 1rem 0;
+  }
 }
