@@ -57,7 +57,7 @@ function addToCard(){
         '.chicken-text .price-row .price span',
       );
       let priceText = priceTage.textContent;
-      let cleanPrice = Number(priceText.replace(/[^\d]/g, ''));
+      let cleanPrice = Number(priceText.replace("SAR", ''));
       /* add to card or select product */
       let container = document.querySelector('#cartItems');
       container.insertAdjacentHTML(
