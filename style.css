@@ -1045,11 +1045,11 @@ footer {
      .chicken-text .price span{
           font-size: 0.7rem;
         }
-        .price-row {
-  flex-direction: column;
+        /* .price-row {
+  /* flex-direction: column;
   gap: 0.4rem;
   
-}
+} */ */
         
   .chicken-text button {
           font-size: 0.5rem;
