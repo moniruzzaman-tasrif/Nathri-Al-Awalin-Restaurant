@@ -372,7 +372,9 @@
 /* ── MENU GRID ── */
 .chicken-item-list {
   display: grid;
+  align-content: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
   gap: 1.5rem;
 }
 .chicken-item {
@@ -1022,6 +1024,9 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  .chicken-item-list {
+      grid-template-columns: repeat( 2,1fr);
+  }
   .stats-bar {
     gap: 2rem;
     flex-wrap: wrap;
