@@ -1030,6 +1030,31 @@ footer {
   }
 }
 @media (max-width: 600px) {
+
+/*NAVBAR */
+
+.logo span {
+  font-size: 0.8rem;
+}
+.main ul li a {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1px 6px;
+        font-size: 0.75rem;
+}
+.cart-btn{
+    font-size: 1rem !important; 
+   
+}
+.cart-count{
+     top: -9px;
+    right: -7px;
+}
+
+
+   /* MENU SECTIONS  */
   chicken-image {
     height: 140px;
   
