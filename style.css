@@ -284,7 +284,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .item-list {
   padding: 0.4rem 0.8rem 0.4rem 0.4rem;
@@ -1013,6 +1013,11 @@ footer {
   :root {
     --margin: 0 1.5rem;
   }
+
+    .all-item-list {
+ overflow-x: scroll;
+  } 
+
   .about-inner {
     grid-template-columns: 1fr;
   }
@@ -1024,6 +1029,18 @@ footer {
   }
 }
 @media (max-width: 600px) {
+
+     
+  .chicken-text .price{
+        font-size: 1rem;
+        .chicken-text .price span{
+          font-size: 0.8rem;
+        }
+  }
+  .chicken-text button {
+    font-size: 0.6rem;
+    padding: 7px 9px;
+  }
   .chicken-item-list {
       grid-template-columns: repeat( 2,1fr);
   }
