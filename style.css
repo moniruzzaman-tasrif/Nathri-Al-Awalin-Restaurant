@@ -1054,7 +1054,7 @@ footer {
   .chicken-text button {
           font-size: 0.5rem;
         padding: 5px 6px;
-        width: 100%;
+        /* width: 100%; */
   }
   .chicken-item-list {
       grid-template-columns: repeat( 2,1fr);
