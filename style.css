@@ -623,11 +623,13 @@
   font-weight: 700;
   font-size: 0.9rem;
   flex-shrink: 0;
+  text-transform: uppercase;
 }
 .author-info h4 {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--secondary);
+  color: var(--secondary); 
+  text-transform: capitalize;
 }
 .author-info span {
   font-size: 0.75rem;
