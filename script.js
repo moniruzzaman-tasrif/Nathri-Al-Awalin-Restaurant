@@ -6,12 +6,14 @@ let itemCount = 0 /* for notification count .i use this variable*/
    
 function careShow() {
   showOrder.addEventListener("click", (e) => {
+    e.preventDefault();
     let showCard = document.querySelector('.cart-sidebar'),
       bodeyShadaw = document.querySelector('#cartOverlay');
     showCard.classList.add('open');
     bodeyShadaw.classList.add('open');
 
-    cardClose.addEventListener('click', () => {
+    cardClose.addEventListener('click', (e) => {
+        e.preventDefault();
        showCard.classList.remove('open');
        bodeyShadaw.classList.remove('open');
     });
@@ -24,7 +26,8 @@ function addToCard(){
 
   addButton.forEach((item, index) => {
 
-    item.addEventListener('click', () => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
       value++;
       let getItemDetels = item.closest('.chicken-item');
       /* image URL */
@@ -95,7 +98,8 @@ function addToCard(){
    let contain = document.querySelector('#cartItems');
    //  let countNumber = 1;
    //increase
-   contain.addEventListener('click', elem => {
+   contain.addEventListener('click', (elem) => {
+     elem.preventDefault();
      let closItem = elem.target.closest('.cart-item');
 
 
@@ -141,6 +145,7 @@ function deletItem() {
     const allItem = document.querySelectorAll('#cartItems');
 
   contain.addEventListener("click", (btn) => {
+    btn.preventDefault();
 
     if (btn.target.closest(".cart-remove")) {
       const removeItem = btn.target.closest('.cart-item');
@@ -239,9 +244,16 @@ function productcount() {
   const drinks = document.querySelector('#drinks-items-total');
   const drinksTotal = document.querySelector('#drinks-Total');
   drinksTotal.textContent = `${drinks.childElementCount} items`;
-
-
 }
+
+/*chackout*/
+
+let chackoutBtn = document.querySelector('.checkout-btn');
+
+chackoutBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+ 
+})
 productcount();
 function display() {
   careShow(); 
