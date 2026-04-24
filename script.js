@@ -89,6 +89,7 @@ function addToCard(){
 
       totalprice(priceTage);
       showAllItem();
+       ShowTotalPrice();
     })
 
 })
@@ -194,7 +195,7 @@ function showAllItem() {
   
   if (itemCount > 0) {
     show.style.display="block"
-  } console.log(itemCount);
+  }
 
   /*this notification another part in deletItem() funnction */
 }
@@ -248,17 +249,37 @@ function productcount() {
 
 /*chackout*/
 
-let chackoutBtn = document.querySelector('.checkout-btn');
 
-chackoutBtn.addEventListener('click', (e) => {
-  e.preventDefault();
- 
-})
+
+
+function ShowTotalPrice() {
+  let chackoutBtn = document.querySelector('.checkout-btn');
+  let totalItem = document.querySelectorAll('#cartItems');
+let countItem= itemCount += totalItem.length
+
+
+
+  
+    chackoutBtn.addEventListener('click', e => {
+      e.preventDefault();
+      if (countItem >= 1) {
+        let totalPrice = document.querySelector('#cartTotal').textContent;
+        let showPrice = document.querySelector('#total-price-chak');
+        showPrice.textContent = `${totalPrice} SAR`;
+        console.log(totalPrice, showPrice);
+        let sowChackout = document.querySelector('.chackout_arae');
+        sowChackout.classList.add('open');
+      }
+    });
+  }
+
 productcount();
 function display() {
+  
   careShow(); 
   addToCard();
   qntPriceCount(); 
   deletItem();
+
 }
  display();
