@@ -281,7 +281,7 @@ let countItem = showChackout += totalItem.length;
             let whatsappNumber = '966539614829'; 
             let url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
-            window.open(url);
+            window.open(url, "_blank");
 
 
         // let totalPrice = document.querySelector('#cartTotal').textContent;
