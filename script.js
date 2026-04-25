@@ -89,11 +89,11 @@ function addToCard( callback){
   
       totalprice(priceTage);
       showAllItem();
-<<<<<<< HEAD
+
       ShowTotalPrice();
-=======
+
        ShowTotalPrice();
->>>>>>> b67929447c59443a1506aae48257d269a2b375f2
+
     })
 
 })
@@ -255,19 +255,13 @@ function productcount() {
 
 
 
-<<<<<<< HEAD
+
 let showChackout = 1
 function ShowTotalPrice() {
   let chackoutBtn = document.querySelector('.checkout-btn');
   let totalItem = document.querySelectorAll('#cartItems');
 let countItem = showChackout += totalItem.length;
-=======
 
-function ShowTotalPrice() {
-  let chackoutBtn = document.querySelector('.checkout-btn');
-  let totalItem = document.querySelectorAll('#cartItems');
-let countItem= itemCount += totalItem.length
->>>>>>> b67929447c59443a1506aae48257d269a2b375f2
 
 
 
@@ -275,7 +269,6 @@ let countItem= itemCount += totalItem.length
     chackoutBtn.addEventListener('click', e => {
       e.preventDefault();
       if (countItem >= 1) {
-<<<<<<< HEAD
         let allProduct = document.querySelectorAll('.cart-item');
       let message = '*ORDER LIST * \n\n *Nathri Al Awalin Restaurant*\n\n';
         
@@ -303,14 +296,6 @@ let countItem= itemCount += totalItem.length
         // console.log(totalPrice, showPrice);
         // let sowChackout = document.querySelector('.chackout_arae');
         // sowChackout.classList.add('open');
-=======
-        let totalPrice = document.querySelector('#cartTotal').textContent;
-        let showPrice = document.querySelector('#total-price-chak');
-        showPrice.textContent = `${totalPrice} SAR`;
-        console.log(totalPrice, showPrice);
-        let sowChackout = document.querySelector('.chackout_arae');
-        sowChackout.classList.add('open');
->>>>>>> b67929447c59443a1506aae48257d269a2b375f2
       }
     });
   }
