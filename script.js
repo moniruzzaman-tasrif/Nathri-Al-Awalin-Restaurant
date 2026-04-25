@@ -21,7 +21,7 @@ function careShow() {
 }
 
 
-function addToCard(){
+function addToCard( callback){
   let addButton = document.querySelectorAll('.chicken-item .price-row button');
 
   addButton.forEach((item, index) => {
@@ -86,9 +86,10 @@ function addToCard(){
       /*incress button dicriss button*/
 
 
-
+  
       totalprice(priceTage);
       showAllItem();
+      ShowTotalPrice();
     })
 
 })
@@ -194,7 +195,7 @@ function showAllItem() {
   
   if (itemCount > 0) {
     show.style.display="block"
-  } console.log(itemCount);
+  }
 
   /*this notification another part in deletItem() funnction */
 }
@@ -248,17 +249,58 @@ function productcount() {
 
 /*chackout*/
 
-let chackoutBtn = document.querySelector('.checkout-btn');
 
-chackoutBtn.addEventListener('click', (e) => {
-  e.preventDefault();
- 
+
+let showChackout = 1
+function ShowTotalPrice() {
+  let chackoutBtn = document.querySelector('.checkout-btn');
+  let totalItem = document.querySelectorAll('#cartItems');
+let countItem = showChackout += totalItem.length;
+
+
+
+  
+    chackoutBtn.addEventListener('click', e => {
+      e.preventDefault();
+      if (countItem >= 1) {
+        let allProduct = document.querySelectorAll('.cart-item');
+      let message = '*ORDER LIST * \n\n *Nathri Al Awalin Restaurant*\n\n';
+        
+        allProduct.forEach(item => {
+
+          let name = item.querySelector('h4').textContent;
+          let price = item.querySelector('.ci-price').textContent;
+          let qty = item.querySelector('.qty-num').textContent;
+
+ message += ` • (${qty})➞${name}➞${price}\n`;
 })
+
+                    let total = document.querySelector('#cartTotal').textContent;
+                message += `\n*PRICE: ${total} SAR*`;
+
+            let whatsappNumber = '966539614829'; 
+            let url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+            window.open(url);
+
+
+        // let totalPrice = document.querySelector('#cartTotal').textContent;
+        // let showPrice = document.querySelector('#total-price-chak');
+        // showPrice.textContent = `${totalPrice} SAR`;
+        // console.log(totalPrice, showPrice);
+        // let sowChackout = document.querySelector('.chackout_arae');
+        // sowChackout.classList.add('open');
+      }
+    });
+  }
+
 productcount();
 function display() {
+  
   careShow(); 
   addToCard();
   qntPriceCount(); 
   deletItem();
+
 }
  display();
