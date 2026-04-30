@@ -149,7 +149,11 @@ const translations = {
 
   ar: {
     navMenu: 'القائمة',
+
     navAbout: ' نحن',
+
+    navAbout: 'نحن',
+
     heroBadge: '🍽 المطبخ السعودي الأصيل',
     heroSub:
       'نكهات أصيلة توارثناها جيلاً بعد جيل — صنعناها بحب وقدّمناها بفخر.',
