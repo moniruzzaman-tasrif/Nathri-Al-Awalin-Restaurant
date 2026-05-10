@@ -30,7 +30,7 @@ const translations = {
     tabRice: 'Rice',
     tabMeat: 'Meat',
     tabVegetables: 'Vegetables',
-    tabCondiments: 'Condiments & Sides',
+    // tabCondiments: 'Condiments & Sides',
     tabBeverages: 'Beverages',
     sectionChicken: 'Chicken',
     sectionRice: 'Rice Dishes',
@@ -424,8 +424,8 @@ function applyLanguage() {
     t.tabRice,
     t.tabMeat,
     t.tabVegetables,
-    t.tabCondiments,
-    t.tabBeverages,
+    // t.tabCondiments,
+    t.tabBeverages
   ];
   document.querySelectorAll('.item-list h2').forEach((h2, i) => {
     if (tabT[i]) h2.textContent = tabT[i];
