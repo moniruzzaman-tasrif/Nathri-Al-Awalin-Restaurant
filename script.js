@@ -87,8 +87,8 @@ const translations = {
     cartEmpty1: 'Your bag is empty',
     cartEmpty2: 'Add items from the menu',
     cartSubtotal: 'Subtotal',
-    cartDelivery: 'Delivery fee',
-    cartDeliveryVal: 'FREE',
+    cartDelivery: 'Order for Pick-up',
+    cartDeliveryVal: '',
     cartPlaceOrder: ' Place Order',
     addBtn: 'Add',
     pricePrefix: 'Price: ',
@@ -142,7 +142,7 @@ const translations = {
     footerHours: 'Open 11:30AM – 12AM',
     footerCopy: '© 2024 Nathri Al Awalin. All rights reserved.',
     toastAlready: 'Item already added',
-    waHeader: '*ORDER LIST*\n\n*Nathri Al Awalin Restaurant*\n\n',
+    waHeader: '*Order for Pick-up*\n\n*Nathri Al Awalin Restaurant*\n\n',
     waPrice: '\n*PRICE:',
     totalPriceLabel: 'total price',
     confirmBtn: 'Confirm Order',
@@ -230,8 +230,8 @@ const translations = {
     cartEmpty1: 'سلتك فارغة',
     cartEmpty2: 'أضف أصنافاً من القائمة',
     cartSubtotal: 'المجموع',
-    cartDelivery: 'رسوم التوصيل',
-    cartDeliveryVal: 'مجاناً',
+    cartDelivery: 'طلب استلام',
+    cartDeliveryVal: '',
     cartPlaceOrder: ' تأكيد الطلب',
     addBtn: 'أضف',
     pricePrefix: 'السعر: ',
@@ -283,7 +283,8 @@ const translations = {
     footerHours: 'مفتوح 11:30ص – 12م',
     footerCopy: '© 2024 نثري الأولين. جميع الحقوق محفوظة.',
     toastAlready: 'الصنف مضاف بالفعل',
-    waHeader: '*قائمة الطلب*\n\n*مطعم نثري الأولين*\n\n',
+
+    waHeader: '*طلب استلام*\n\n*مطعم نثري الأولين*\n\n',
     waPrice: '\n*السعر الكلي:',
     totalPriceLabel: 'السعر الكلي',
     confirmBtn: 'تأكيد الطلب',
@@ -296,6 +297,7 @@ const translations = {
    2. STATE
    ────────────────────────────────────────── */
 let currentLang = localStorage.getItem('nathri_lang') || 'en';
+console.log(currentLang);
 let countprice = 0;
 let itemCount = 0;
 const CART_KEY = 'nathri_cart';
@@ -331,6 +333,7 @@ function recalcTotals() {
 
 function buildCartItemHTML(item) {
   const t = translations[currentLang];
+  console.log(t)
   const name = t[item.title] || item.title;
   return `<div class="cart-item" data-title="${item.title}">
     <img class="cart-item-img" src="${item.img}" alt="${item.alt}">
@@ -801,9 +804,11 @@ function ShowTotalPrice() {
     if (!cart.length) return;
     const t = translations[currentLang];
     let msg = t.waHeader;
+    console.log(msg);
     cart.forEach(item => {
       const name = t[item.title] || item.title;
       msg += ` • (${item.qty})➞${name}➞${item.price * item.qty} SAR\n`;
+
     });
     msg += `${t.waPrice} ${document.querySelector('#cartTotal').textContent} SAR*`;
     window.open(
